@@ -1,0 +1,48 @@
+<table style="border: 1px solid gray; border-collapse: collapse;">
+    <tr>
+        <th style="border: 1px solid gray; border-collapse: collapse;">#</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">Source</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">Target</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">In sX</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">In sY</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">In tX</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">In tY</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">In Angle</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">LSQ sX</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">LSQ sY</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">LSQ tX</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">LSQ tY</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">LSQ Rotation</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">Affine sX</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">Affine sy</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">Affine tX</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">Affine tY</th>
+        <th style="border: 1px solid gray; border-collapse: collapse;">Affine Rotation</th>
+    </tr>
+    <tr *ngFor="let test of tests; index as i" style="border: 1px solid gray; border-collapse: collapse;">
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{i+1}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.source | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.target | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.input[0][0] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.input[0][1] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.input[1][0] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.input[1][1] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.input[2]}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output[0][0] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output[0][1] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output[1][0] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output[1][1] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output[2]}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output2[0][0] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output2[0][1] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output2[1][0] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output2[1][1] | json}}</td>
+        <td style="border: 1px solid gray; border-collapse: collapse;">{{test.output2[2]}}</td>
+    </tr>
+</table>
+
+<style>
+    table tr th, table tr, td {
+        padding: 5px;
+    }
+</style>

@@ -1,0 +1,21 @@
+<form [formGroup]="coordinatesForm" style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px;">
+    <div formGroupName="topLeft">
+       X: <input type="text" formControlName="latitude" placeholder="Latitude" required>
+       Y: <input type="text" formControlName="longitude" placeholder="Longitude" required>
+    </div>
+
+    <div formGroupName="topRight">
+       X: <input type="text" formControlName="latitude" placeholder="Latitude" required>
+       Y: <input type="text" formControlName="longitude" placeholder="Longitude" required>
+    </div>
+
+    <div formGroupName="bottomLeft">
+       X: <input type="text" formControlName="latitude" placeholder="Latitude" required>
+       Y: <input type="text" formControlName="longitude" placeholder="Longitude" required>
+    </div>
+
+    <div formGroupName="bottomRight">
+       X: <input type="text" formControlName="latitude" placeholder="Latitude" required>
+       Y: <input type="text" formControlName="longitude" placeholder="Longitude" required>
+    </div>
+</form> 
