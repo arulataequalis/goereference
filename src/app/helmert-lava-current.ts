@@ -10,14 +10,14 @@ export class GeoReference {
     };
 
     getRotation = () => {
-        return +this._rotation.toFixed(3);
+        return +this._rotation;
     };
 
     getScale = () => {
-        return [+this._scale[0].toFixed(2),+this._scale[1].toFixed(2)];
+        return [+this._scale[0],+this._scale[1]];
     };
     getTranslation = () => {
-        return [+this._translation[0].toFixed(2),+this._translation[1].toFixed(2)];
+        return [+this._translation[0],+this._translation[1]];
     };
 
     private get scaleX() {
